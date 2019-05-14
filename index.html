@@ -6,9 +6,9 @@
   </head>
   <body>
     <header class="header">
-      <section class="header-block">
-        <div class="logo">
-          <a class="logo__link">
+      <section class="header-top-block">
+        <div class="header-logo">
+          <a class="header-logo__link">
             <img src="img/logo.svg" width="220" height="47" alt="Логотип магазина «Техномарт»">
           </a>
         </div>
@@ -40,16 +40,16 @@
       </section>
       <section class="user-navigation">
         <ul class="user-navigation__list">
-            <li class="user-navigation__item">
+            <li class="user-navigation__signin">
                 <!-- Тут должна быть иконка входа, будет реализовано через background-image для псевдоэлемента -->
                 <a class="user-navigation__link" href="#">Войти</a><!-- Тут будет переход на всплывающее окно для входа -->
             </li>
-            <li class="user-navigation__item">
+            <li class="user-navigation__signup">
                 <a class="user-navigation__link" href="#">Регистрация</a><!-- Тут будет переход на всплывающее окно для регистрации -->
             </li>
         </ul>
       </section>
-      <nav class="site-navigation"> <!-- Этот класс используется для обеих навигаций на сайте -->
+      <nav class="site-navigation"> <!-- Этот класс используется для обеих навигаций на сайте — в хедере и в подвале -->
         <ul class="site-navigation__list">
           <li class="site-navigation__item">
             <a class="site-navigation__link" href="index.html">Главная
@@ -79,9 +79,7 @@
       <section class="promo">
         <div class="promo__card promo__card--new"> <!-- Это карточка товара. Если с ней все ок, то добавить еще 4 таких же, только без модификатора new -->
           <h3>Материалы</h3>
-          <button>
-            <a href="materials.html">На любой вкус</a>
-          </button>
+          <a class="button button--secondary" href="materials.html">На любой вкус</a>
           <!-- Тут будет соответствующая карточке иконка -->
         </div>
         <div class="promo__slider">
@@ -90,9 +88,7 @@
               <h3>Дрели</h3>
               <p class="slogan">Соседям на радость!<p>
               <!-- Сюда нужно вставить декоративное фоновое изображение, а еще переключатели для слайдера -->
-              <button class="primary">
-                <a href="catalog.html">Открыть каталог</a>
-              </button>
+              <a class="button" href="catalog.html">Открыть каталог</a>
             </li>
           <!-- Сюда нужно добавить второй элемент слайдера -->
           </ul>
@@ -100,7 +96,7 @@
       </section>
       <section class="popular">
         <h2>Популярные товары:</h2>
-        <button class="primary">Все популярные товары</button>
+        <a class="button" href="catalog.html">Все популярные товары</a>
       </section>
       <section class="popular-products">
         <article class="product"> <!-- Это 1 из 4 карточек популярных товаров. Если все ок, то сделать еще 3 таких же. К 4 в класс добавить модификатор new -->
@@ -114,7 +110,7 @@
       </section>
       <section class="popular">
         <h2>Популярные производители:</h2>
-        <button class="primary">Все производители</button>
+        <a class="button" href="manufacturers.html">Все производители</a>
       </section>
       <section class="popular-manufacturers">
         <div class="manufacturer">
@@ -149,18 +145,18 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <button class="primary">Подробнее о компании</button>
+        <a class="button" href="about.html">Подробнее о компании</a>
       </article>
       <section class="map">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
         <img src="#" alt="Адрес офиса компании «Техномарт»: ул. Большая Конюшенная, 19">
-        <button class="primary">Заблудились? Напишите нам!</button>
+        <a class="button" href="https://yandex.ru/maps/2/saint-petersburg/?l=map&ll=30.323055%2C59.938631&mode=search&sll=30.323055%2C59.938631&source=wizgeo&sspn=0.014977%2C0.004576&text=Россия%2C%20Санкт-Петербург%2C%20Большая%20Конюшенная%20улица%2C%2019&utm_medium=maps-desktop&utm_source=serp&z=17">Заблудились? Напишите нам!</a>
       </section>
     </main>
     <footer class="footer">
       <section class="footer-block1">
-        <a class="logo"> <!-- В ссылку нужно добавить переход наверх -->
+        <a class="footer-logo"> <!-- В ссылку нужно добавить переход наверх -->
           <img src="img/logo.svg" width="220" height="47" alt="Логотип магазина «Техномарт»">
         </a>
         <nav class="site-navigation"> <!-- Использовала тот же класс, что и для навигации сверху страницы -->
@@ -194,7 +190,7 @@
                 </a></li>
             </ul>
           </nav>
-          <p>
+          <p class="footer-block2__contacts">
               г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
               +7 (812) 555-05-55
           </p>
@@ -204,18 +200,18 @@
             © 2010–2019 Компания «Техномарт»<br>
             Все права защищены
         </p>
-        <div class="footer-block2__links">
+        <div class="footer-block2__social-links">
           <a class="footer-block2__button" href="#">Вконтакте</a>
           <a class="footer-block2__button" href="#">Фейсбук</a>
           <a class="footer-block2__button" href="#">Инстаграм</a>
         </div>
-        <p class="footer-block2__contacts">
-          Обратная связь<br>
-          <a class="footer-block2__link" href="#">mail@htmlacademy.ru</a>
+        <p class="footer-block2__mailto">
+            Обратная связь<br>
+            <a class="footer-block2__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
         <p class="footer-block2__dev-info">
-          Разработано —<br>
-          <a class="footer-block2__link" href="https://htmlacademy.ru">HTML Academy</a>
+            Разработано —<br>
+            <a class="footer-block2__link" href="https://htmlacademy.ru">HTML Academy</a>
         </p>
       </section>
     </footer>
