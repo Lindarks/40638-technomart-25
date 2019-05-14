@@ -90,7 +90,9 @@
               <h3>Дрели</h3>
               <p class="slogan">Соседям на радость!<p>
               <!-- Сюда нужно вставить декоративное фоновое изображение, а еще переключатели для слайдера -->
-              <button class="primary">Открыть каталог</button>
+              <button class="primary">
+                <a href="catalog.html">Открыть каталог</a>
+              </button>
             </li>
           <!-- Сюда нужно добавить второй элемент слайдера -->
           </ul>
@@ -100,30 +102,31 @@
         <h2>Популярные товары:</h2>
         <button class="primary">Все популярные товары</button>
       </section>
-      <section class="popular-goods">
-        <article class="goods"> <!-- Это 1 из 4 карточек популярных товаров. Если все ок, то сделать еще 3 таких же. К 4 в класс добавить модификатор new -->
+      <section class="popular-products">
+        <article class="product"> <!-- Это 1 из 4 карточек популярных товаров. Если все ок, то сделать еще 3 таких же. К 4 в класс добавить модификатор new -->
           <img src="#" alt="Перфоратор Bosch BFG 9000">
-          <h4 class="goods__name">Перфоратор Bosch</h4>
-          <p class="goods__model">BFG 9000</p>
-          <p class="goods__price">32500 р.</p>
+          <h4 class="product__name">Перфоратор Bosch</h4>
+          <p class="product__model">BFG 9000</p>
+          <p class="product__price">32500 р.</p>
           <svg><!-- Тут будет красная плашка ценника --></svg>
-          <p class="goods__price--promo">25500 р.</p>
+          <p class="product__price product__price--promo">25500 р.</p>
         </article>
       </section>
       <section class="popular">
         <h2>Популярные производители:</h2>
         <button class="primary">Все производители</button>
       </section>
-
-
-
+      <section class="popular-manufacturers">
+        <div class="manufacturer">
+          <a href="#"><img src="#" alt="Bosch"></a>
+        </div>
+      </section>
       <section class="services">
         <h2>Сервисы</h2>
         <dl class="services__list">
           <dt class="services__item-name">Доставка</dt>
           <dd class="services__item-description">
-            Мы с удовольствием доставим ваш товар прямо
-            к вашему подъезду совершенно бесплатно!<br>
+            Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br>
             Ведь мы неплохо заработаем<br>
             поднимая его на ваш этаж!
           </dd>
