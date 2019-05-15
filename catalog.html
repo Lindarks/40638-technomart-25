@@ -6,7 +6,80 @@
   </head>
   <body>
     <header class="header">
-      <!-- Здесь будет хедер из главной после его проверки -->
+      <section class="header-top-block">
+        <div class="header-logo">
+          <a class="header-logo__link">
+            <img src="img/logo.png" width="220" height="47" alt="Логотип магазина «Техномарт»">
+          </a>
+        </div>
+        <div class="search-form">
+          <!-- Тут должна быть иконка лупы, будет реализовано через background-image для псевдоэлемента -->
+          <!-- Тут должна быть форма поиска input и label-->
+        </div>
+        <div class="wishlist">
+          <!-- Тут должна быть иконка закладки, будет реализовано через background-image для псевдоэлемента -->
+          <a class="wishlist__link" href="wishlist.html">Закладки: 0</a>
+        </div>
+        <div class="cart">
+          <!-- Тут должна быть иконка тележки, будет реализовано через background-image для псевдоэлемента -->
+          <a class="cart__link" href="cart.html">Корзина: 0</a>
+        </div>
+        <div class="checkout">
+          <a class="checkout__link" href="checkout.html">Оформить заказ</a>
+        </div>
+      </section>
+      <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+      <section class="header-contacts">
+        <div class="telephone">
+          <!-- Тут должна быть иконка телефонной трубки, будет реализовано через background-image для псевдоэлемента -->
+          <p class="telephone__text">+7 (812) 555-05-55</p>
+        </div>
+        <div class="address">
+          <p class="address__text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </div>
+      </section>
+      <section class="user-navigation">
+        <ul class="user-navigation__list">
+            <li class="user-navigation__item">
+              <!-- Тут будет иконка пользователя -->
+              <a class="user-navigation__link" href="profile.html">Равшан Джумшутович
+                </a>
+              <a class="user-navigation__link" href="#"><!-- Тут будет иконка выхода из профиля -->
+                </a>
+            </li>
+            <li class="user-navigation__item user-navigation__item--inside-the-profile">
+              <a class="user-navigation__link user-navigation__link--inside-the-profile" href="orders.html">Мои заказы
+                </a></li>
+            <li class="user-navigation__item user-navigation__item--inside-the-profile">
+              <a class="user-navigation__link user-navigation__link--inside-the-profile" href="profile.html">Личный кабинет
+                </a></li>
+        </ul>
+      </section>
+      <nav class="site-navigation"> <!-- Этот класс используется для обеих навигаций на сайте — в хедере и в подвале -->
+        <ul class="site-navigation__list">
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="index.html">Главная
+              </a></li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="about.html">Компания
+              </a></li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="catalog.html">Каталог
+              </a></li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="news.html">Новости
+              </a></li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="special.html">Спецпредложения
+              </a></li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="sheeping.html">Доставка
+              </a></li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="contacts.html">Контакты
+              </a></li>
+        </ul>
+      </nav>
     </header>
     <main class="conteiner">
       <section class="breadcrumbs">
@@ -42,7 +115,7 @@
       </section>
       <section class="catalog">
         <article class="product"> <!-- Это 1 из 9 карточек товаров каталога. Если все ок, то сделать еще 8 таких же. К 3, 5 и 7 в класс добавить модификатор new. Этот же класс использовался в блоке с популярными товарами на главной -->
-          <img src="#" alt="Перфоратор Bosch BFG 3000">
+          <img src="img/perforator-bfg-3000.png" alt="Перфоратор Bosch BFG 3000">
           <h4 class="product__name">Перфоратор Bosch</h4>
           <p class="product__model">BFG 3000</p>
           <p class="product__price">22500 р.</p>
