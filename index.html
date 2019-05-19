@@ -13,8 +13,14 @@
           </a>
         </div>
         <div class="search-form">
+          <form class="search-form__form" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="search-form__fields">
+              <label>Поиск:
+                <input type="text" name="search">
           <!-- Тут должна быть иконка лупы, будет реализовано через background-image для псевдоэлемента -->
-          <!-- Тут должна быть форма поиска input и label-->
+              </label>
+            <fieldset>
+          </form>
         </div>
         <div class="wishlist">
           <!-- Тут должна быть иконка закладки, будет реализовано через background-image для псевдоэлемента -->
@@ -30,6 +36,7 @@
       </section>
       <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
       <section class="header-contacts">
+        <h2 class="visually-hidden">Контакты компании «Техномарт»</h2>
         <div class="telephone">
           <!-- Тут должна быть иконка телефонной трубки, будет реализовано через background-image для псевдоэлемента -->
           <p class="telephone__text">+7 (812) 555-05-55</p>
@@ -77,6 +84,7 @@
     </header>
     <main class="conteiner">
       <section class="promo">
+        <h2="visually-hidden">Интересные предложения от интернет-магазина «Техномарт»</h2>
         <div class="promo__card promo__card--new">
           <h3>Материалы</h3>
           <a class="button button--secondary" href="materials.html">На любой вкус</a>
@@ -206,8 +214,38 @@
       <section class="map">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-        <img src="img/map.png" alt="Адрес офиса компании «Техномарт»: ул. Большая Конюшенная, 19">
+        <img src="img/map.png" alt="Адрес офиса компании «Техномарт»: ул. Большая Конюшенная, 19/8">
         <a class="button" href="https://yandex.ru/maps/2/saint-petersburg/?l=map&ll=30.323055%2C59.938631&mode=search&sll=30.323055%2C59.938631&source=wizgeo&sspn=0.014977%2C0.004576&text=Россия%2C%20Санкт-Петербург%2C%20Большая%20Конюшенная%20улица%2C%2019&utm_medium=maps-desktop&utm_source=serp&z=17">Заблудились? Напишите нам!</a>
+      </section>
+      <section class="modal modal--write-us">
+        <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="modal__fields">
+            <p>
+              <label>Ваше имя:
+                <input type="text" name="name" placeholder="Имя Фамилия">
+              </label>
+            </p>
+            <p>
+              <label>Ваш e-mail:
+                <input type="text" name="email" placeholder="email@example.com">
+              </label>
+            </p>
+            <p>
+              <label>Текст письма:
+                <textarea name="email-text" rows="10">В свободной форме</textarea>
+              </label>
+            </p>
+            <button class="button" type="submit">Отправить</button>
+          </fieldset>
+        </form>
+        <button class="modal-close-x" type="button">Закрыть</button>
+      </section>
+      <section class="modal modal--big-map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <a href="https://yandex.ru/maps/2/saint-petersburg/?l=map&ll=30.323055%2C59.938631&mode=search&sll=30.323055%2C59.938631&source=wizgeo&sspn=0.014977%2C0.004576&text=Россия%2C%20Санкт-Петербург%2C%20Большая%20Конюшенная%20улица%2C%2019&utm_medium=maps-desktop&utm_source=serp&z=17">
+          <img src="img/big-map.png" alt="Адрес офиса компании «Техномарт»: ул. Большая Конюшенная, 19/8">
+        </a>
+        <button class="modal-close-x" type="button">Закрыть</button>
       </section>
     </main>
     <footer class="footer">
@@ -246,10 +284,10 @@
                 </a></li>
           </ul>
         </nav>
-        <p class="footer-block2__contacts">
+        <address class="footer-block2__contacts">
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
             +7 (812) 555-05-55
-        </p>
+        </address>
       </section>
       <section class="footer-block2">
         <p class="footer-block2__copirights">
@@ -257,9 +295,9 @@
             Все права защищены
         </p>
         <div class="footer-block2__social-links">
-          <a class="footer-block2__button" href="#">Вконтакте</a>
-          <a class="footer-block2__button" href="#">Фейсбук</a>
-          <a class="footer-block2__button" href="#">Инстаграм</a>
+          <a class="footer-block2__button" href="#" aria-label="Компания «Техномарт» во «ВКонтакте»"></a>
+          <a class="footer-block2__button" href="#" aria-label="Компания «Техномарт» в «Фейсбук»"></a>
+          <a class="footer-block2__button" href="#" aria-label="Компания «Техномарт» в «Инстаграм»"></a>
         </div>
         <p class="footer-block2__mailto">
             Обратная связь<br>
