@@ -83,12 +83,90 @@ a {
   color: #ffffff;
 }
 
+.search-form a:hover,
+.wishlist a:hover,
+.cart a:hover,
+.search-form a:focus,
+.wishlist a:focus,
+.cart a:focus {
+  background-color: #212a3a;
+}
 
+.search-form a:active,
+.wishlist a:active,
+.cart a:active {
+  /*Тут нужно сделать текст прозрачным, 0,6, цвет текста #ffffff*/
 
+  background-color: #161d29;
+}
 
+.checkout a:hover {
+  background-color: #5fbb2d;
+}
 
+.checkout a:active {
+  background-color: #518534;
+}
 
+.promo__card {
 
+}
+
+.promo__card--materials {
+  background-color: #ffbf47;
+}
+
+.promo__card--equipment {
+  background-color: #3bbce3;
+}
+
+.promo__card--tools {
+  background-color: #dc91d8;
+}
+
+.promo__card--special {
+  background-color: #8ed78f;
+}
+
+.promo__card--sheeping {
+  background-color: #ffc047;
+}
+
+.promo__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.promo__slider-list {
+  list-style: none;
+}
+
+.promo__slider-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.promo__slider-slogan {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.popular {
+  background-color: #f9f5f0;
+}
+
+.popular__title {
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #32425c;
+}
 
 .products__list {
   list-style: none;
@@ -99,13 +177,72 @@ a {
 }
 
 .products__name,
-.products__model, {
+.products__model {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
   text-align: center;
   color: #000000;
+}
+
+.products__price {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: line-through;
+  text-transform: uppercase;
+  color: #a9a9a9;
+}
+
+.products__price--promo {
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.services {
+  background-color: #f4f8f9;
+}
+
+.services__title,
+.about__title,
+.contacts-title {
+  font-size: 30px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.services__item-name {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #ffffff;
+
+  background-color: #32425c;
+}
+
+.services__item-name:hover,
+.services__item-name:focus {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #32425c;
+
+  background-color: #ffffff;
+}
+
+.services__item-description,
+.services__text,
+.about__text {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.shipping-companies-list {
 }
 
 
@@ -116,23 +253,9 @@ a {
   color: #ffffff;
 }
 
-.secondary {
-
-}
-
-.popular {
-  background-color: #f9f5f0;
-}
-
-.services {
-  background-color: #f4f8f9;
-}
-
-
-
-h2 {
-  font-size: 30px;
-  text-transform: uppercase;
+.button--secondary {
+  background-color: #000000;
+  /*Тут нужно сделать прозрачной только кнопку, 0,1, а текст оставить непрозрачным*/
 }
 
 .footer-block1 {

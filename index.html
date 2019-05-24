@@ -88,42 +88,42 @@
     <main class="conteiner">
       <section class="promo">
         <h2="visually-hidden">Интересные предложения от интернет-магазина «Техномарт»</h2>
-        <div class="promo__card promo__card--new">
-          <h3>Материалы</h3>
+        <div class="promo__card promo__card--new promo__card--materials">
+          <h3 class="promo__title">Материалы</h3>
           <a class="button button--secondary" href="materials.html">На любой вкус</a>
           <!-- Тут будет соответствующая карточке иконка -->
         </div>
-        <div class="promo__card">
-          <h3>Инструмент</h3>
+        <div class="promo__card promo__card--equipment">
+          <h3 class="promo__title">Инструмент</h3>
           <a class="button button--secondary" href="equipment.html">На все случаи</a>
           <!-- Тут будет соответствующая карточке иконка -->
         </div>
-        <div class="promo__card">
-          <h3>Техника</h3>
+        <div class="promo__card promo__card--tools">
+          <h3 class="promo__title">Техника</h3>
           <a class="button button--secondary" href="tools.html">Для стройки</a>
           <!-- Тут будет соответствующая карточке иконка -->
         </div>
-        <div class="promo__card">
-          <h3>Скидка 50%</h3>
+        <div class="promo__card promo__card--special">
+          <h3 class="promo__title">Скидка 50%</h3>
           <a class="button button--secondary" href="special.html">На 350 товаров</a>
           <!-- Тут будет соответствующая карточке иконка -->
         </div>
-        <div class="promo__card">
-          <h3>Доставка</h3>
+        <div class="promo__card promo__card--sheeping">
+          <h3 class="promo__title">Доставка</h3>
           <a class="button button--secondary" href="sheeping.html">Бесплатно</a>
           <!-- Тут будет соответствующая карточке иконка -->
         </div>
         <div class="promo__slider">
           <ul class="promo__slider-list">
             <li class="promo__slider-item">
-              <h3>Дрели</h3>
-              <p class="slogan">Соседям на радость!<p>
+              <h3 class="promo__slider-title">Дрели</h3>
+              <p class="promo__slider-slogan">Соседям на радость!<p>
               <!-- Сюда нужно вставить декоративное фоновое изображение, а еще переключатели для слайдера -->
               <a class="button" href="catalog.html">Открыть каталог</a>
             </li>
             <li class="promo__slider-item">
-              <h3>Перфораторы</h3>
-              <p class="slogan">Настоящие мужские игрушки<p>
+              <h3 class="promo__slider-title">Перфораторы</h3>
+              <p class="promo__slider-slogan">Настоящие мужские игрушки<p>
               <!-- Сюда нужно вставить декоративное фоновое изображение, а еще переключатели для слайдера -->
               <a class="button" href="catalog.html">Открыть каталог</a>
             </li>
@@ -131,7 +131,7 @@
         </div>
       </section>
       <section class="popular">
-        <h2>Популярные товары:</h2>
+        <h2 class="popular__title">Популярные товары:</h2>
         <a class="button" href="catalog.html">Все популярные товары</a>
       </section>
       <section class="products">
@@ -171,7 +171,7 @@
         </ul>
       </section>
       <section class="popular">
-        <h2>Популярные производители:</h2>
+        <h2 class="popular__title">Популярные производители:</h2>
         <a class="button" href="manufacturers.html">Все производители</a>
       </section>
       <section class="popular-manufacturers">
@@ -185,7 +185,10 @@
           <a class="popular-manufacturers__link" href="#"><img src="img/metabo.png" alt="metabo"></a>
       </section>
       <section class="services">
-        <h2>Сервисы</h2>
+        <h2 class="services__title">Сервисы</h2>
+        <p class="services__text">
+          Хороший интернет-магазин отличается от плохого не только ценами!
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <dl class="services__list">
           <dt class="services__item-name">Доставка</dt>
           <dd class="services__item-description">
@@ -213,12 +216,12 @@
           <!-- Здесь нужно предусмотреть возможность добавления соответствующей разделу иконки -->
         </dl>
       </section>
-      <article>
-        <h2>Компания «Техномарт»</h2>
-        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-        <p>Мы можем доставить ваш товар в самы отдаленные точки России!<br>
+      <article class="about">
+        <h2 class="about__title">Компания «Техномарт»</h2>
+        <p class="about__text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+        <p class="about__text">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
         Техномарт работает со многими транспортными компаниями:</p>
-        <ul>
+        <ul class="shipping-companies-list">
           <li>Деловые линии</li>
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
@@ -226,7 +229,7 @@
         <a class="button" href="about.html">Подробнее о компании</a>
       </article>
       <section class="map">
-        <h2>Контакты</h2>
+        <h2 class="contacts-title">Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
         <img src="img/map.png" alt="Адрес офиса компании «Техномарт»: ул. Большая Конюшенная, 19/8">
         <a class="button" href="https://yandex.ru/maps/2/saint-petersburg/?l=map&ll=30.323055%2C59.938631&mode=search&sll=30.323055%2C59.938631&source=wizgeo&sspn=0.014977%2C0.004576&text=Россия%2C%20Санкт-Петербург%2C%20Большая%20Конюшенная%20улица%2C%2019&utm_medium=maps-desktop&utm_source=serp&z=17">Заблудились? Напишите нам!</a>
