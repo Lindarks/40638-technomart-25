@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-color: #f3f7f8;
+}
+
+.header-top-block {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #293449;
+}
+
+.main-title {
+  font-size: 14px;
+  line-height: 23px;
+  font-style: italic;
+  color: #ee3643;
+}
+
+.telephone__text {
+  font-size: 21px;
+  color: #ee4a56;
+
+  border: 3px solid #ffffff;
+}
+
+.address__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.user-navigation__list,
+.header-site-navigation__list {
+  list-style: none;
+}
+
+.user-navigation__signin,
+.user-navigation__signup {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.header-site-navigation {
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+
+  background-color: #32425c;
+  border-bottom: 5px solid #293449;
+}
+
+.checkout {
+  background-color: #63a63e;
+}
+
+.search-form a,
+.wishlist a,
+.cart a,
+.checkout a,
+.user-navigation__list a,
+.header-site-navigation__list a{
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+.products__list {
+  list-style: none;
+}
+
+.products__item {
+  border: 1px solid #eaeaea;
+}
+
+.products__name,
+.products__model, {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+}
+
+
+.button {
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: #ee3643;
+  color: #ffffff;
+}
+
+.secondary {
+
+}
+
+.popular {
+  background-color: #f9f5f0;
+}
+
+.services {
+  background-color: #f4f8f9;
+}
+
+
+
+h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.footer-block1 {
+  background-color: #32425c;
+}
+
+.footer-site-navigation__list {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f1f5f7;
+
+  list-style: none;
+}
+.footer-site-navigation__item a {
+  color: #ffffff;
+}
+.footer-site-navigation__item--secondary a {
+  color: #ffda96;
+}
+
+.footer-block2 {
+  background-color: #293449;
+}
+
+.footer-block2__contacts {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f3f7f9;
+}
+
+.footer-block2__copirights {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.footer-block2__mailto,
+.footer-block2__dev-info {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.footer-block2__link {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffd180;
+}
+
+.visually-hidden {
+
+}
+
+.modal {
+  display: none;
+}
