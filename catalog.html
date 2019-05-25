@@ -37,8 +37,9 @@
           <a class="checkout__link" href="checkout.html">Оформить заказ</a>
         </div>
       </section>
-      <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+      <h1 class="main-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
       <section class="header-contacts">
+        <h2 class="visually-hidden">Контакты компании «Техномарт»</h2>
         <div class="telephone">
           <!-- Тут должна быть иконка телефонной трубки, будет реализовано через background-image для псевдоэлемента -->
           <p class="telephone__text">+7 (812) 555-05-55</p>
@@ -51,7 +52,7 @@
         <ul class="user-navigation__list">
             <li class="user-navigation__item">
               <!-- Тут будет иконка пользователя -->
-              <a class="user-navigation__link" href="profile.html">Равшан Джумшутович
+              <a class="user-navigation__link user-navigation__link--inside-the-profile" href="profile.html">Равшан Джумшутович
                 </a>
               <a class="user-navigation__link" href="#"><!-- Тут будет иконка выхода из профиля -->
                 </a>
@@ -108,51 +109,55 @@
         </ul>
       </section>
       <section class="popular popular--product-group-name">
-        <h2>Перфораторы</h2>
+        <h2 class="popular__title">Перфораторы</h2>
       </section>
       <section class="filters">
+        <h2 class="filters__title">Фильтр:</h2>
         <form class="filters__form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="filters__price">
-            <legend>Цена:</legend>
+            <legend class="filters__price-legend">Цена:</legend>
+            <input type="text">
+            <label> — </label>
+            <input type="text">
           </fieldset>
           <fieldset class="filters__manufacturer">
-            <legend>Производители:</legend>
+            <legend class="filters__manufacturer-legend">Производители:</legend>
             <p>
-              <label>Bosch
-                <input type="checkbox" name="bosch" checked>
+              <label>
+                <input type="checkbox" name="bosch" checked> Bosch
               </label>
             </p>
             <p>
-              <label>Интерскол
-                <input type="checkbox" name="interskol" checked>
+              <label>
+                <input type="checkbox" name="interskol" checked> Интерскол
               </label>
             </p>
             <p>
-              <label>Makita
-                <input type="checkbox" name="makita" checked>
+              <label>
+                <input type="checkbox" name="makita" checked> Makita
               </label>
             </p>
             <p>
-              <label>Dewalt
-                <input type="checkbox" name="dewalt" checked>
+              <label>
+                <input type="checkbox" name="dewalt" checked> Dewalt
               </label>
             </p>
             <p>
-              <label>Hitachi
-                <input type="checkbox" name="hitachi" checked>
+              <label>
+                <input type="checkbox" name="hitachi" checked> Hitachi
               </label>
             </p>
           </fieldset>
           <fieldset class="filters__power">
-            <legend>Питание:</legend>
+            <legend class="filters__power-legend">Питание:</legend>
             <p>
-              <label>Аккумуляторные
-                <input type="radio" name="power" value="battery" checked>
+              <label>
+                <input type="radio" name="power" value="battery" checked> Аккумуляторные
               </label>
             </p>
             <p>
-              <label>Сетевые
-                <input type="radio" name="power" value="mains-power">
+              <label>
+                <input type="radio" name="power" value="mains-power"> Сетевые
               </label>
             </p>
           </fieldset>
@@ -160,7 +165,7 @@
         </form>
       </section>
       <section class="sort">
-        <b>Сортировка</b>
+        <h2 class="sort__title">Сортировка</h2>
         <a class="sort__link" href="#">По цене</a>
         <a class="sort__link" href="#">По типу</a>
         <a class="sort__link" href="#">По функционалу</a>
@@ -250,9 +255,9 @@
         <a class="pagination__link" href="#">3</a>
         <a class="pagination__link" href="#">Следующая</a>
       </nav>
-      <article>
-        <h2>Пара слов о перфораторах</h2>
-        <p>
+      <article class="about-perforators">
+        <h2 class="about-perforators__title">Пара слов о перфораторах</h2>
+        <p class="about-perforators__text">
           Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
           Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
         </p>
