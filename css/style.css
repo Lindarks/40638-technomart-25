@@ -117,6 +117,13 @@ a {
   opacity: 0.3;
 }
 
+.user-navigation__link::before {
+  content: "";
+  background-image: url("../img/icon-login.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
 .user-navigation__link--inside-the-profile a:hover,
 .user-navigation__link--inside-the-profile a:focus {
   color: #000000;
@@ -307,7 +314,8 @@ a {
   text-decoration-color: #ee3643;
 }
 
-.services {
+.services,
+.about-perforators {
   background-color: #f4f8f9;
 }
 
@@ -421,19 +429,16 @@ a {
 }
 
 .footer-site-navigation__item a:hover,
-.footer-site-navigation__item a:focus {
-  text-decoration-line: underline;
-}
+.footer-site-navigation__item a:focus,
 .footer-site-navigation__item--secondary a:hover,
 .footer-site-navigation__item--secondary a:focus {
   text-decoration-line: underline;
 }
 
-.footer-site-navigation__item a:active {
+.footer-site-navigation__item a:active,
+.footer-site-navigation__item--secondary a:active {
   opacity: 0.5;
-}
-.footer-site-navigation__item--secondary a:active{
-  opacity: 0.5;
+  text-decoration-line: none;
 }
 
 .footer-block2 {
@@ -465,8 +470,22 @@ a {
   color: #ffd180;
 }
 
-.visually-hidden {
+.footer-block2__link:hover,
+.footer-block2__link:focus {
+  text-decoration-line: underline;
+}
 
+.footer-block2__link:active {
+  text-decoration-line: none;
+  color: #ee3643;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .modal {
