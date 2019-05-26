@@ -27,6 +27,22 @@ a {
   background-color: #293449;
 }
 
+.header-logo {
+  background-color: #ee3643;
+  border-bottom: 5px solid #b52933;
+}
+
+.header-logo:hover,
+.header-logo:focus {
+  background-color: #ca2c37;
+  border-bottom: 5px solid #9a212a;
+}
+
+.header-logo:active {
+  background-color: #ba2732;
+  border-bottom: 5px solid #8e1e26;
+}
+
 .checkout {
   background-color: #63a63e;
 }
@@ -300,18 +316,14 @@ a {
   font-size: 13px;
   opacity: 0.3;
   color: #000000;
-  text-decoration-line: underline;
-  text-decoration-style: dotted;
-  text-decoration-color: #ee3643;
+  border-bottom: 1px dotted #ee3643;
 }
 
 .sort__link:hover,
 .sort__link:focus {
   opacity: 1;
   color: #000000;
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-decoration-color: #ee3643;
+  border-bottom: 1px solid #ee3643;
 }
 
 .services,
@@ -398,16 +410,16 @@ a {
 
 .button--secondary {
   background-color: #000000;
-  opacity: 0.1;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .button--secondary:hover,
 .button--secondary:focus {
-  opacity: 0.2;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .button--secondary:active {
-  opacity: 0.3;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .footer-block1 {
@@ -482,10 +494,13 @@ a {
 
 .visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0;
+  border:0;
   height: 1px;
-  margin: -1px;
+  width: 1px;
+  overflow: hidden;
 }
 
 .modal {
