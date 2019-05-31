@@ -16,10 +16,24 @@ a {
 }
 
 .header {
+  display: flex;
+  flex-direction: column;
   background-color: #f3f7f8;
 }
 
+.container {
+  display: flex;
+  width: 940px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.container--part {
+  flex-direction: column;
+}
+
 .header-top-block {
+  margin-bottom: 45px;
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
@@ -90,10 +104,22 @@ a {
 }
 
 .main-title {
+  width: 200px;
+  margin-left: 50px;
   font-size: 14px;
   line-height: 23px;
   font-style: italic;
   color: #ee3643;
+}
+
+.header-contacts {
+  width: 270px;
+  margin-left: 70px;
+}
+
+.user-navigation {
+  width: 280px;
+  margin-left: 70px;
 }
 
 .telephone__text {
@@ -109,9 +135,25 @@ a {
   color: #32425c;
 }
 
-.user-navigation__list,
-.header-site-navigation__list {
+.user-navigation__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.header-site-navigation__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 940px;
+  margin-left: 10px;
+  margin-right: 10px;
+  /*margin-bottom: 60px;*/
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 23px;
 }
 
 .user-navigation__item {
@@ -170,8 +212,14 @@ a {
   opacity: 0.5;
 }
 
-.promo__card {
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
 
+.promo__card {
+  width: 300px;
+  height: 123px;
 }
 
 .promo__card--materials {
@@ -223,6 +271,8 @@ a {
   background-color: #f9f5f0;
 }
 
+
+
 .popular__title {
   font-size: 30px;
   font-weight: 400;
@@ -270,6 +320,9 @@ a {
 }
 
 .products__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -420,6 +473,11 @@ a {
 
 .button--secondary:active {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-block1 {
