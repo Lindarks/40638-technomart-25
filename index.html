@@ -20,9 +20,7 @@
             <form class="search-form__form" action="https://echo.htmlacademy.ru" method="get">
               <fieldset class="search-form__fields">
                 <!-- <button class="button button--search" aria-label="Найти">Иконка</button> -->
-                <label>Поиск:
-                  <input type="search" name="search">
-                </label>
+                  <input type="search" name="search" placeholder="Поиск:">
               </fieldset>
             </form>
           </div>
@@ -80,7 +78,7 @@
               <a class="header-site-navigation__link" href="special.html">Спецпредложения
                 </a></li>
             <li class="header-site-navigation__item">
-              <a class="header-site-navigation__link" href="sheeping.html">Доставка
+              <a class="header-site-navigation__link" href="shipping.html">Доставка
                 </a></li>
             <li class="header-site-navigation__item">
               <a class="header-site-navigation__link" href="contacts.html">Контакты
@@ -94,43 +92,44 @@
         <section class="promo">
           <div class="container container--promo">
               <h2 class="visually-hidden">Интересные предложения от интернет-магазина «Техномарт»</h2>
-              <div class="promo__card promo__card--new promo__card--materials">
-                <h3 class="promo__title">Материалы</h3>
-                <a class="button button--promo" href="materials.html">На любой вкус</a>
-              </div>
-              <div class="promo__card promo__card--equipment">
-                <h3 class="promo__title">Инструмент</h3>
-                <a class="button button--promo" href="equipment.html">На все случаи</a>
-              </div>
-              <div class="promo__card promo__card--tools">
-                <h3 class="promo__title">Техника</h3>
-                <a class="button button--promo" href="tools.html">Для стройки</a>
-              </div>
-              <div class="promo__card promo__card--special">
-                <h3 class="promo__title">Скидка 50%</h3>
-                <a class="button button--promo" href="special.html">На 350 товаров</a>
-              </div>
-              <div class="promo__card promo__card--sheeping">
-                <h3 class="promo__title">Доставка</h3>
-                <a class="button button--promo" href="sheeping.html">Бесплатно</a>
-                <!-- Тут будет соответствующая карточке иконка -->
-              </div>
-              <!--<div class="promo__slider">
-                <ul class="promo__slider-list">
-                  <li class="promo__slider-item">
-                    <h3 class="promo__slider-title">Дрели</h3>
-                    <p class="promo__slider-slogan">Соседям на радость!<p>
-                    Сюда нужно вставить декоративное фоновое изображение, а еще переключатели для слайдера
-                    <a class="button button--open-catalog" href="catalog.html">Открыть каталог</a>
-                  </li>
-                  <li class="promo__slider-item">
-                    <h3 class="promo__slider-title">Перфораторы</h3>
-                    <p class="promo__slider-slogan">Настоящие мужские игрушки<p>
-                    Сюда нужно вставить декоративное фоновое изображение, а еще переключатели для слайдера
-                    <a class="button button--open-catalog" href="catalog.html">Открыть каталог</a>
-                  </li>
-                </ul>
-              </div>-->
+                <div class="wrap-1">
+                  <div class="promo__card promo__card--new promo__card--materials">
+                    <h3 class="promo__title">Материалы</h3>
+                    <a class="button button--promo" href="materials.html">На любой вкус</a>
+                  </div>
+                  <div class="promo__card promo__card--equipment">
+                    <h3 class="promo__title">Инструмент</h3>
+                    <a class="button button--promo" href="equipment.html">На все случаи</a>
+                  </div>
+                  <div class="promo__card promo__card--tools">
+                    <h3 class="promo__title">Техника</h3>
+                    <a class="button button--promo" href="tools.html">Для стройки</a>
+                  </div>
+                </div>
+                <div class="wrap-2">
+                  <div class="promo__card promo__card--special">
+                    <h3 class="promo__title">Скидка 50%</h3>
+                    <a class="button button--promo" href="special.html">На 350 товаров</a>
+                  </div>
+                  <div class="promo__card promo__card--shipping">
+                    <h3 class="promo__title">Доставка</h3>
+                    <a class="button button--promo" href="shipping.html">Бесплатно</a>
+                  </div>
+                </div>
+                  <div class="promo__slider">
+                    <ul class="promo__slider-list">
+                      <li class="promo__slider-item">
+                        <h3 class="promo__slider-title">Дрели</h3>
+                        <p class="promo__slider-slogan">Соседям на радость!</p>
+                        <a class="button button--open-catalog" href="catalog.html">Открыть каталог</a>
+                      </li>
+                      <li class="promo__slider-item">
+                        <h3 class="promo__slider-title">Перфораторы</h3>
+                        <p class="promo__slider-slogan">Настоящие мужские игрушки</p>
+                        <a class="button button--open-catalog" href="catalog.html">Открыть каталог</a>
+                      </li>
+                    </ul>
+                  </div>
             </div>
         </section>
         <section class="popular">
@@ -144,32 +143,28 @@
                 <h4 class="products__name">Перфоратор Bosch</h4>
                 <p class="products__model">BFG 9000</p>
                 <p class="products__price">32500 р.</p>
-                <svg><!-- Тут будет красная плашка ценника --></svg>
-                <p class="products__price products__price--promo">25500 р.</p>
+                <p class="products__price-promo">25500 р.</p>
             </li>
             <li class="products__item">
                 <img src="img/perforator-bfg-3000.png" width="218" height="170" alt="Перфоратор Bosch BFG 3000">
                 <h4 class="products__name">Перфоратор Bosch</h4>
                 <p class="products__model">BFG 3000</p>
                 <p class="products__price">22500 р.</p>
-                <svg><!-- Тут будет красная плашка ценника --></svg>
-                <p class="products__price products__price--promo">15500 р.</p>
+                <p class="products__price-promo">15500 р.</p>
             </li>
             <li class="products__item">
                 <img src="img/perforator-bfg-6000.png" width="218" height="170" alt="Перфоратор Bosch BFG 6000">
                 <h4 class="products__name">Перфоратор Bosch</h4>
                 <p class="products__model">BFG 6000</p>
                 <p class="products__price">30500 р.</p>
-                <svg><!-- Тут будет красная плашка ценника --></svg>
-                <p class="products__price products__price--promo">25500 р.</p>
+                <p class="products__price-promo">25500 р.</p>
             </li>
             <li class="products__item products__item--new">
                 <img src="img/perforator-bfg-2000.png" width="218" height="170" alt="Перфоратор Bosch BFG 2000">
                 <h4 class="products__name">Перфоратор Bosch</h4>
                 <p class="products__model">BFG 2000</p>
                 <p class="products__price"></p>
-                <svg><!-- Тут будет красная плашка ценника --></svg>
-                <p class="products__price products__price--promo">12500 р.</p>
+                <p class="products__price-promo products__price-promo--empty">12500 р.</p>
             </li>
           </ul>
         </section>
@@ -232,22 +227,22 @@
             </div>
         </div>
       </section>
-      <div class="container">
+      <div class="container container--about-map">
         <article class="about">
           <h2 class="about__title">Компания «Техномарт»</h2>
           <p class="about__text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
           <p class="about__text">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
           Техномарт работает со многими транспортными компаниями:</p>
           <ul class="shipping-companies-list">
-            <li>Деловые линии</li>
-            <li>Автотрейдинг</li>
-            <li>ЖелДорЭкспедиция</li>
+            <li class="shipping-companies-item">Деловые линии</li>
+            <li class="shipping-companies-item">Автотрейдинг</li>
+            <li class="shipping-companies-item">ЖелДорЭкспедиция</li>
           </ul>
           <a class="button button--company-about" href="about.html">Подробнее о компании</a>
         </article>
         <section class="map">
           <h2 class="contacts-title">Контакты</h2>
-          <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+          <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис:</p>
           <img src="img/map.png" alt="Адрес офиса компании «Техномарт»: ул. Большая Конюшенная, 19/8">
           <a class="button button--write-us" href="https://yandex.ru/maps/2/saint-petersburg/?l=map&ll=30.323055%2C59.938631&mode=search&sll=30.323055%2C59.938631&source=wizgeo&sspn=0.014977%2C0.004576&text=Россия%2C%20Санкт-Петербург%2C%20Большая%20Конюшенная%20улица%2C%2019&utm_medium=maps-desktop&utm_source=serp&z=17">Заблудились? Напишите нам!</a>
         </section>
@@ -283,10 +278,12 @@
     </main>
     <footer class="footer">
         <section class="footer-block1">
-          <div class="container">
-              <a class="footer-logo"> <!-- В ссылку нужно добавить переход наверх -->
-                <img src="img/logo.svg" width="220" height="68" alt="Логотип магазина «Техномарт»">
-              </a>
+          <div class="container container--footer">
+              <div class="footer-logo">
+                  <a class="footer-logo__link">
+                    <img src="img/logo.svg" alt="Логотип магазина «Техномарт»">
+                  </a>
+                </div> 
               <nav class="footer-site-navigation">
                 <ul class="footer-site-navigation__list">
                   <li class="footer-site-navigation__item">
@@ -299,29 +296,33 @@
                     <a class="footer-site-navigation__link" href="catalog.html">Каталог
                       </a></li>
                   <li class="footer-site-navigation__item">
-                    <a class="footer-site-navigation__link" href="sheeping.html">Доставка
+                    <a class="footer-site-navigation__link" href="shipping.html">Доставка
                       </a></li>
                   <li class="footer-site-navigation__item">
                     <a class="footer-site-navigation__link" href="contacts.html">Контакты
                       </a></li>
-                  <li class="footer-site-navigation__item footer-site-navigation__item--secondary">
+                </ul>
+              </nav>
+            <div class="container container--footer-inner">
+              <nav class="footer-site-navigation">
+                <ul class="footer-site-navigation__list">
+                  <li class="footer-site-navigation__item">
                     <a class="footer-site-navigation__link" href="materials.html">Материалы
                       </a></li>
-                  <li class="footer-site-navigation__item footer-site-navigation__item--secondary">
+                  <li class="footer-site-navigation__item">
                     <a class="footer-site-navigation__link" href="equipment.html">Техника
                       </a></li>
-                  <li class="footer-site-navigation__item footer-site-navigation__item--secondary">
+                  <li class="footer-site-navigation__item">
                     <a class="footer-site-navigation__link" href="tools.html">Инструмент
                       </a></li>
-                  <li class="footer-site-navigation__item footer-site-navigation__item--secondary">
+                  <li class="footer-site-navigation__item">
                     <a class="footer-site-navigation__link" href="special.html">Спецпредложения
                       </a></li>
                 </ul>
               </nav>
-              <div class="footer-block2__contacts">
-                  г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-                  +7 (812) 555-05-55
-              </div>
+              <p class="footer-block2__contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55
+              </p>
+            </div>
           </div>
         </section>
         <section class="footer-block2">
