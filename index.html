@@ -12,8 +12,8 @@
       <section class="header-top-block">
         <div class="container">
           <div class="header-logo">
-            <a class="header-logo__link">
-              <img src="img/logo.svg" width="108" height="18" alt="Логотип магазина «Техномарт»">
+            <a class="header-logo__link" href="index.html">
+              <img src="img/logo.svg" width="109" height="18" alt="Логотип магазина «Техномарт»">
             </a>
           </div>
           <div class="search-form">
@@ -36,15 +36,11 @@
         </div>
       </section>
       <div class="container">
-        <h1 class="main-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+        <h1 class="main-title">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</h1>
         <section class="header-contacts">
             <h2 class="visually-hidden">Контакты компании «Техномарт»</h2>
-            <div class="telephone">
-              <p class="telephone__text">+7 (812) 555-05-55</p>
-            </div>
-            <div class="address">
-              <p class="address__text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-            </div>
+            <p class="telephone">+7 (812) 555-05-55</p>
+            <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </section>
         <section class="user-navigation">
             <ul class="user-navigation__list">
@@ -106,7 +102,7 @@
                 </div>
                 <div class="wrap-2">
                   <div class="promo__card promo__card--special">
-                    <h3 class="promo__title">Скидка 50%</h3>
+                    <h3 class="promo__title">Скидки 50%</h3>
                     <a class="button button--promo" href="special.html">На 350 товаров</a>
                   </div>
                   <div class="promo__card promo__card--shipping">
@@ -138,7 +134,7 @@
           <ul class="products__list">
             <li class="products__item">
                 <img src="img/perforator-bfg-9000.png" width="218" height="170" alt="Перфоратор Bosch BFG 9000">
-                <h4 class="products__name">Перфоратор Bosch</h4>
+                <h4 class="products__name">Перфоратор <span>Bosch</span></h4>
                 <p class="products__model">BFG 9000</p>
                 <p class="products__price">32500 р.</p>
                 <p class="products__price-promo">25500 р.</p>
@@ -149,21 +145,21 @@
             </li>
             <li class="products__item">
                 <img src="img/perforator-bfg-3000.png" width="218" height="170" alt="Перфоратор Bosch BFG 3000">
-                <h4 class="products__name">Перфоратор Bosch</h4>
+                <h4 class="products__name">Перфоратор <span>Bosch</span></h4>
                 <p class="products__model">BFG 3000</p>
                 <p class="products__price">22500 р.</p>
                 <p class="products__price-promo">15500 р.</p>
             </li>
             <li class="products__item">
                 <img src="img/perforator-bfg-6000.png" width="218" height="170" alt="Перфоратор Bosch BFG 6000">
-                <h4 class="products__name">Перфоратор Bosch</h4>
+                <h4 class="products__name">Перфоратор <span>Bosch</span></h4>
                 <p class="products__model">BFG 6000</p>
                 <p class="products__price">30500 р.</p>
                 <p class="products__price-promo">25500 р.</p>
             </li>
             <li class="products__item products__item--new">
                 <img src="img/perforator-bfg-2000.png" width="218" height="170" alt="Перфоратор Bosch BFG 2000">
-                <h4 class="products__name">Перфоратор Bosch</h4>
+                <h4 class="products__name">Перфоратор <span>Bosch</span></h4>
                 <p class="products__model">BFG 2000</p>
                 <p class="products__price"></p>
                 <p class="products__price-promo products__price-promo--empty">12500 р.</p>
@@ -246,44 +242,16 @@
           <h2 class="contacts-title">Контакты</h2>
           <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис:</p>
           <img src="img/map.png" width="300" height="158" alt="Адрес офиса компании «Техномарт»: ул. Большая Конюшенная, 19/8">
-          <a class="button button--write-us" href="https://yandex.ru/maps/2/saint-petersburg/?l=map&ll=30.323055%2C59.938631&mode=search&sll=30.323055%2C59.938631&source=wizgeo&sspn=0.014977%2C0.004576&text=Россия%2C%20Санкт-Петербург%2C%20Большая%20Конюшенная%20улица%2C%2019&utm_medium=maps-desktop&utm_source=serp&z=17">Заблудились? Напишите нам!</a>
+          <a class="button button--write-us" href="form.html">Заблудились? Напишите нам!</a>
         </section>
       </div>
-      <section class="modal modal--write-us">
-        <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="modal__fields">
-            <p>
-              <label>Ваше имя:
-                <input type="text" name="name" placeholder="Имя Фамилия">
-              </label>
-            </p>
-            <p>
-              <label>Ваш e-mail:
-                <input type="text" name="email" placeholder="email@example.com">
-              </label>
-            </p>
-            <p>
-              <label>Текст письма:
-                <textarea name="email-text" rows="10">В свободной форме</textarea>
-              </label>
-            </p>
-            <button class="button">Отправить</button>
-          </fieldset>
-        </form>
-        <button class="modal-close-x" type="button">Закрыть</button>
-      </section>
-      <section class="modal modal--big-map">
-        <h2 class="visually-hidden">Как до нас добраться</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.320858716389655!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sae!4v1558353655964!5m2!1sru!2sae" width="940" height="447" frameborder="0" style="border:0" allowfullscreen></iframe>
-        <button class="modal-close-x" type="button">Закрыть</button>
-      </section>
     </main>
     <footer class="footer">
         <section class="footer-block1">
           <div class="container container--footer">
               <div class="footer-logo">
-                  <a class="footer-logo__link">
-                    <img src="img/logo.svg" width="108" height="18" alt="Логотип магазина «Техномарт»">
+                  <a class="footer-logo__link" href="index.html">
+                    <img src="img/logo.svg" width="138" height="22" alt="Логотип магазина «Техномарт»">
                   </a>
                 </div> 
               <nav class="footer-site-navigation">
@@ -368,10 +336,44 @@
               </p>
               <p class="footer-block2__dev-info">
                   Разработано —
-                  <a class="footer-block2__link" href="https://htmlacademy.ru">HTML Academy</a>
+                  <a class="footer-block2__link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
               </p>
             </div>
         </section>
     </footer>
+    <section class="modal modal--write-us">
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="form-container1">
+            <div class="form-wrap1">
+              <p class="modal__item">
+                <label>Ваше имя:
+                  <input type="text" name="name" placeholder="Имя Фамилия">
+                </label>
+              </p>
+              <p class="modal__item">
+                <label>Ваш e-mail:
+                  <input type="text" name="email" placeholder="email@example.com">
+                </label>
+              </p>
+              <p>
+                <label>Текст письма:
+                  <textarea name="email-text" rows="5">В свободной форме</textarea>
+                </label>
+              </p>
+            </div>
+          </div>
+        <div class="form-container2">
+          <div class="form-wrap2">
+            <button class="button button--send">Отправить</button>
+          </div>
+        </div>
+      </form>
+      <button class="modal__close" type="button">Закрыть</button>
+    </section>
+    <section class="modal modal--big-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.320858716389655!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sae!4v1558353655964!5m2!1sru!2sae" width="940" height="447" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
   </body>
 </html>
