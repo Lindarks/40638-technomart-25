@@ -131,41 +131,48 @@
               <fieldset class="filters__manufacturer">
                 <legend class="filters__manufacturer-legend">Производители:</legend>
                 <p>
-                  <label>
-                    <input type="checkbox" name="bosch" checked> Bosch
+                  <label class="filters__checkbox">
+                    <input type="checkbox" name="bosch" class="visually-hidden"> Bosch
+                    <span class="checkbox-indicator"></span>
                   </label>
                 </p>
                 <p>
-                  <label>
-                    <input type="checkbox" name="interskol" checked> Интерскол
+                  <label class="filters__checkbox">
+                    <input type="checkbox" name="interskol" class="visually-hidden"> Интерскол
+                    <span class="checkbox-indicator"></span>
                   </label>
                 </p>
                 <p>
-                  <label>
-                    <input type="checkbox" name="makita" checked> Makita
+                  <label class="filters__checkbox">
+                    <input type="checkbox" name="makita" class="visually-hidden"> Makita
+                    <span class="checkbox-indicator"></span>
                   </label>
                 </p>
                 <p>
-                  <label>
-                    <input type="checkbox" name="dewalt" checked> Dewalt
+                  <label class="filters__checkbox">
+                    <input type="checkbox" name="dewalt" class="visually-hidden"> Dewalt
+                    <span class="checkbox-indicator"></span>
                   </label>
                 </p>
                 <p>
-                  <label>
-                    <input type="checkbox" name="hitachi" checked> Hitachi
+                  <label class="filters__checkbox">
+                    <input type="checkbox" name="hitachi" class="visually-hidden"> Hitachi
+                    <span class="checkbox-indicator"></span>
                   </label>
                 </p>
               </fieldset>
               <fieldset class="filters__power">
                 <legend class="filters__power-legend">Питание:</legend>
                 <p>
-                  <label>
-                    <input type="radio" name="power" value="battery" checked> Аккумуляторные
+                  <label class="filters__radio">
+                    <input type="radio" name="power" value="battery" checked class="visually-hidden"> Аккумуляторные
+                    <span class="radio-indicator"></span>
                   </label>
                 </p>
                 <p>
-                  <label>
-                    <input type="radio" name="power" value="mains-power"> Сетевые
+                  <label class="filters__radio">
+                    <input type="radio" name="power" value="mains-power" class="visually-hidden"> Сетевые
+                    <span class="radio-indicator"></span>
                   </label>
                 </p>
               </fieldset>
@@ -372,11 +379,14 @@
         </section>
     </footer>
     <section class="modal modal--added-to-cart">
-      <svg><!-- Тут будет зеленая иконка с галкой --></svg>
-      <h2>Товар добавлен в корзину!</h2>
-      <a class="button" href="checkout.html">Оформить заказ</a>
-      <button class="button" type="button">Продолжить покупки</button>
-      <button class="modal-close" type="button">Закрыть</button>
+      <div class="form-container1">    
+          <h2>Товар добавлен в корзину!</h2>
+      </div>
+      <div class="form-container2">
+          <a class="button button--checkout" href="checkout.html">Оформить заказ</a>
+          <button class="button button--continue-shopping" type="button">Продолжить покупки</button>
+          <button class="modal__close" type="button">Закрыть</button>
+      </div>
     </section>
   </body>
 </html>
