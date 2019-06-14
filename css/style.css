@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 
-  min-width: 940px;
+  min-width: 960px;
 
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 13px;
@@ -165,7 +165,7 @@ img {
 
 .search-form {
   display: block;
-  width: 269px;
+  width: 270px;
   height: 42px;
   color: #ffffff;
 }
@@ -238,7 +238,7 @@ img {
 
   position: absolute;
   left: 17px;
-  top: 11px;
+  top: 12px;
 
   width: 14px;
   height: 16px;
@@ -255,7 +255,7 @@ img {
 
   position: absolute;
   left: 18px;
-  top: 11px;
+  top: 12px;
 
   width: 16px;
   height: 16px;
@@ -396,23 +396,26 @@ img {
 
 .user-navigation__link--signin {
   position: relative;
-  padding-left: 48px;
-  padding-right: 24px;
+  padding-left: 46px;
+  padding-right: 25px;
 }
 
-.user-navigation__link--signin::before {
-  content: "";
-
+.user-navigation__link--signin svg {
   position: absolute;
-  left: 14px;
+  left: 12px;
   top: 15px;
+}
 
-  width: 20px;
-  height: 17px;
+.user-navigation__link--signin:hover polygon,
+.user-navigation__link--signin:hover path,
+.user-navigation__link--signin:focus polygon,
+.user-navigation__link--signin:focus path {
+  fill: #32425c;
+}
 
-  background-image: url("../img/icon-login.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+.user-navigation__link--signin:active polygon,
+.user-navigation__link--signin:active path {
+  fill: #c5c5c5;
 }
 
 .user-navigation__link--signup {
@@ -423,28 +426,28 @@ img {
 
 .user-navigation__link--user-profile-name {
   position: relative;
-  padding-left: 50px;
+  padding-left: 47px;
   padding-right: 27px;
 }
 
-.user-navigation__link--user-profile-name::before {
-  content: "";
-
+.user-navigation__link--user-profile-name svg {
   position: absolute;
   left: 15px;
   top: 14px;
-
-  width: 20px;
-  height: 18px;
-
-  background-image: url("../img/icon-user.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
 .user-navigation__link--user-profile-name:hover,
 .user-navigation__link--user-profile-name:focus {
   color: #000000;
+}
+
+.user-navigation__link--user-profile-name:hover path,
+.user-navigation__link--user-profile-name:focus path {
+  fill: #32425c;
+}
+
+.user-navigation__link--user-profile-name:active path {
+  fill: #c5c5c5;
 }
 
 .user-navigation__link--signout {
@@ -470,14 +473,14 @@ img {
   font-size: 16px;
   line-height: 18px;
   padding: 0px;
-  margin-top: 6px;
+  margin-top: 4px;
   color: #32425c;
   border-bottom: 1px solid #32425c;
   background-color: transparent;
 }
 
 .user-navigation__link--user-orders {
-  margin-left: 22px;
+  margin-left: 19px;
 }
 
 .user-navigation__link--user-orders:hover,
